@@ -1,0 +1,737 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [N:\MTE241_Project2 - Copy\project2.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image N:\MTE241_Project2 - Copy\project2.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.02 [Build 28]: Last Updated: Mon Nov 14 18:39:41 2016
+<BR><P>
+<H3>Maximum Stack Usage =       1760 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+main &rArr; test_rndm_alc_free &rArr; find_violation &rArr; qsort &rArr;  qsort (Cycle)
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[1]">NMI_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1]">NMI_Handler</a><BR>
+ <LI><a href="#[2]">HardFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2]">HardFault_Handler</a><BR>
+ <LI><a href="#[3]">MemManage_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[3]">MemManage_Handler</a><BR>
+ <LI><a href="#[4]">BusFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[4]">BusFault_Handler</a><BR>
+ <LI><a href="#[5]">UsageFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[5]">UsageFault_Handler</a><BR>
+ <LI><a href="#[6]">SVC_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[6]">SVC_Handler</a><BR>
+ <LI><a href="#[7]">DebugMon_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[7]">DebugMon_Handler</a><BR>
+ <LI><a href="#[8]">PendSV_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[8]">PendSV_Handler</a><BR>
+ <LI><a href="#[20]">ADC_IRQHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[20]">ADC_IRQHandler</a><BR>
+ <LI><a href="#[3d]">qsort</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[3d]">qsort</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[20]">ADC_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[21]">BOD_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[4]">BusFault_Handler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[2c]">CANActivity_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[23]">CAN_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[24]">DMA_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[7]">DebugMon_Handler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[1c]">EINT0_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[1d]">EINT1_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[1e]">EINT2_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[1f]">EINT3_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[26]">ENET_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[2]">HardFault_Handler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[14]">I2C0_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[15]">I2C1_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[16]">I2C2_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[25]">I2S_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[28]">MCPWM_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[3]">MemManage_Handler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[1]">NMI_Handler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[1a]">PLL0_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[2a]">PLL1_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[13]">PWM1_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[8]">PendSV_Handler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[29]">QEI_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[27]">RIT_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[1b]">RTC_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[0]">Reset_Handler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[17]">SPI_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[18]">SSP0_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[19]">SSP1_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[6]">SVC_Handler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[9]">SysTick_Handler</a> from half_fit_test.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[2e]">SystemInit</a> from system_lpc17xx.o(.text) referenced from startup_lpc17xx.o(.text)
+ <LI><a href="#[b]">TIMER0_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[c]">TIMER1_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[d]">TIMER2_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[e]">TIMER3_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[f]">UART0_IRQHandler</a> from uart.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[10]">UART1_IRQHandler</a> from uart.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[11]">UART2_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[12]">UART3_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[2b]">USBActivity_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[22]">USB_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[5]">UsageFault_Handler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[a]">WDT_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
+ <LI><a href="#[2f]">__main</a> from entry.o(.ARM.Collect$$$$00000000) referenced from startup_lpc17xx.o(.text)
+ <LI><a href="#[4c]">cmpr_blks</a> from half_fit_test.o(.text) referenced from half_fit_test.o(.text)
+ <LI><a href="#[30]">fputc</a> from retarget.o(.text) referenced from printf1.o(i.__0printf$1)
+ <LI><a href="#[2d]">main</a> from half_fit_test.o(.text) referenced from entry8.o(.ARM.Collect$$$$00000009)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[2f]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(.text)
+</UL>
+<P><STRONG><a name="[67]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+
+<P><STRONG><a name="[31]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[63]"></a>__main_after_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[68]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+
+<P><STRONG><a name="[69]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8.o(.ARM.Collect$$$$00000009))
+
+<P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[1]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[2]"></a>HardFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[3]"></a>MemManage_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManage_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManage_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[4]"></a>BusFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[5]"></a>UsageFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsageFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsageFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[6]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[7]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DebugMon_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DebugMon_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[8]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[20]"></a>ADC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_IRQHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[21]"></a>BOD_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[2c]"></a>CANActivity_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[23]"></a>CAN_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[24]"></a>DMA_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[1c]"></a>EINT0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[1d]"></a>EINT1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[1e]"></a>EINT2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[1f]"></a>EINT3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[26]"></a>ENET_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[14]"></a>I2C0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[15]"></a>I2C1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[16]"></a>I2C2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[25]"></a>I2S_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[28]"></a>MCPWM_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[1a]"></a>PLL0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[2a]"></a>PLL1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[13]"></a>PWM1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[29]"></a>QEI_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[27]"></a>RIT_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[1b]"></a>RTC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[17]"></a>SPI_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[18]"></a>SSP0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[19]"></a>SSP1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[b]"></a>TIMER0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[c]"></a>TIMER1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[d]"></a>TIMER2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[e]"></a>TIMER3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[11]"></a>UART2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[12]"></a>UART3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[2b]"></a>USBActivity_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[22]"></a>USB_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[a]"></a>WDT_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[33]"></a>sendchar</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, retarget.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = sendchar &rArr; UARTInit &rArr; FreeSnd
+</UL>
+<BR>[Calls]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTSendChar
+<LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ttywrch
+<LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fgetc
+<LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
+</UL>
+
+<P><STRONG><a name="[36]"></a>getkey</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, retarget.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTReceiveChar
+<LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fgetc
+</UL>
+
+<P><STRONG><a name="[30]"></a>fputc</STRONG> (Thumb, 14 bytes, Stack size 16 bytes, retarget.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = fputc &rArr; sendchar &rArr; UARTInit &rArr; FreeSnd
+</UL>
+<BR>[Calls]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendchar
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> printf1.o(i.__0printf$1)
+</UL>
+<P><STRONG><a name="[38]"></a>fgetc</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, retarget.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getkey
+<LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendchar
+</UL>
+
+<P><STRONG><a name="[6a]"></a>ferror</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, retarget.o(.text), UNUSED)
+
+<P><STRONG><a name="[39]"></a>_ttywrch</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, retarget.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendchar
+</UL>
+
+<P><STRONG><a name="[6b]"></a>_sys_exit</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, retarget.o(.text), UNUSED)
+
+<P><STRONG><a name="[3a]"></a>__aeabi_uldivmod</STRONG> (Thumb, 98 bytes, Stack size 40 bytes, uldiv.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __aeabi_uldivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemCoreClockUpdate
+</UL>
+
+<P><STRONG><a name="[3d]"></a>qsort</STRONG> (Thumb, 156 bytes, Stack size 40 bytes, qsort.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40 + In Cycle
+<LI>Call Chain = qsort &rArr;  qsort (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qsort
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qsort
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_violation
+</UL>
+
+<P><STRONG><a name="[55]"></a>rand</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, rand.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_rndm_alc_free
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_random_block_size
+</UL>
+
+<P><STRONG><a name="[6c]"></a>srand</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, rand.o(.text), UNUSED)
+
+<P><STRONG><a name="[6d]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
+
+<P><STRONG><a name="[66]"></a>__aeabi_uidivmod</STRONG> (Thumb, 44 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[6e]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[3e]"></a>SystemCoreClockUpdate</STRONG> (Thumb, 424 bytes, Stack size 32 bytes, system_lpc17xx.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = SystemCoreClockUpdate &rArr; __aeabi_uldivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2e]"></a>SystemInit</STRONG> (Thumb, 290 bytes, Stack size 0 bytes, system_lpc17xx.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(.text)
+</UL>
+<P><STRONG><a name="[40]"></a>get_index</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, half_fit.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;half_free
+<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;half_alloc
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;half_init
+<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;merge_blocks
+<LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;remove_from_bucket
+</UL>
+
+<P><STRONG><a name="[48]"></a>get_address_mem</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, half_fit.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;half_free
+</UL>
+
+<P><STRONG><a name="[41]"></a>get_address_bkt</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, half_fit.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;half_alloc
+<LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;remove_from_bucket
+</UL>
+
+<P><STRONG><a name="[3f]"></a>remove_from_bucket</STRONG> (Thumb, 242 bytes, Stack size 20 bytes, half_fit.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = remove_from_bucket
+</UL>
+<BR>[Calls]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_address_bkt
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_index
+</UL>
+<BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;merge_blocks
+</UL>
+
+<P><STRONG><a name="[42]"></a>merge_blocks</STRONG> (Thumb, 396 bytes, Stack size 16 bytes, half_fit.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = merge_blocks &rArr; remove_from_bucket
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;remove_from_bucket
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_index
+</UL>
+<BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;half_free
+</UL>
+
+<P><STRONG><a name="[43]"></a>half_init</STRONG> (Thumb, 114 bytes, Stack size 8 bytes, half_fit.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = half_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_index
+</UL>
+<BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_max_alc_1_byte
+<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_rndm_alc_free
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_static_alc_free_violation
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_static_alc_free
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_alc_free_max
+<LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_max_alc
+</UL>
+
+<P><STRONG><a name="[45]"></a>dummyfunction1</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, half_fit.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;half_alloc
+</UL>
+
+<P><STRONG><a name="[46]"></a>dummyfunction2</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, half_fit.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;half_alloc
+</UL>
+
+<P><STRONG><a name="[44]"></a>half_alloc</STRONG> (Thumb, 534 bytes, Stack size 32 bytes, half_fit.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = half_alloc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dummyfunction2
+<LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dummyfunction1
+<LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_address_bkt
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_index
+</UL>
+<BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_max_alc_1_byte
+<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_rndm_alc_free
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_static_alc_free_violation
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;alloc_blk_in_arr
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_static_alc_free
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_alc_free_max
+<LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_max_block
+</UL>
+
+<P><STRONG><a name="[47]"></a>half_free</STRONG> (Thumb, 400 bytes, Stack size 32 bytes, half_fit.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = half_free &rArr; merge_blocks &rArr; remove_from_bucket
+</UL>
+<BR>[Calls]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;merge_blocks
+<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_address_mem
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_index
+</UL>
+<BR>[Called By]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_rndm_alc_free
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_static_alc_free_violation
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_static_alc_free
+<LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_max_block
+</UL>
+
+<P><STRONG><a name="[9]"></a>SysTick_Handler</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, half_fit_test.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[49]"></a>find_max_block</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, half_fit_test.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = find_max_block &rArr; half_free &rArr; merge_blocks &rArr; remove_from_bucket
+</UL>
+<BR>[Calls]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;half_free
+<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;half_alloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_max_alc_1_byte
+<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_rndm_alc_free
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_static_alc_free_violation
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_static_alc_free
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_alc_free_max
+<LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_max_alc
+</UL>
+
+<P><STRONG><a name="[4c]"></a>cmpr_blks</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, half_fit_test.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> half_fit_test.o(.text)
+</UL>
+<P><STRONG><a name="[4a]"></a>is_violated</STRONG> (Thumb, 52 bytes, Stack size 32 bytes, half_fit_test.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = is_violated &rArr; __2printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_rndm_alc_free
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_static_alc_free_violation
+</UL>
+
+<P><STRONG><a name="[4d]"></a>find_violation</STRONG> (Thumb, 118 bytes, Stack size 48 bytes, half_fit_test.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = find_violation &rArr; qsort &rArr;  qsort (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qsort
+</UL>
+<BR>[Called By]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_rndm_alc_free
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_static_alc_free_violation
+</UL>
+
+<P><STRONG><a name="[4e]"></a>log_2</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, half_fit_test.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = log_2 &rArr; __2printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_random_block_size
+</UL>
+
+<P><STRONG><a name="[4f]"></a>test_max_alc</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, half_fit_test.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = test_max_alc &rArr; find_max_block &rArr; half_free &rArr; merge_blocks &rArr; remove_from_bucket
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_max_block
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;half_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[50]"></a>test_alc_free_max</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, half_fit_test.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = test_alc_free_max &rArr; find_max_block &rArr; half_free &rArr; merge_blocks &rArr; remove_from_bucket
+</UL>
+<BR>[Calls]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_max_block
+<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;half_alloc
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;half_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[51]"></a>test_static_alc_free</STRONG> (Thumb, 208 bytes, Stack size 40 bytes, half_fit_test.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = test_static_alc_free &rArr; find_max_block &rArr; half_free &rArr; merge_blocks &rArr; remove_from_bucket
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_max_block
+<LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;half_free
+<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;half_alloc
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;half_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[52]"></a>alloc_blk_in_arr</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, half_fit_test.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = alloc_blk_in_arr &rArr; half_alloc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;half_alloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_static_alc_free_violation
+</UL>
+
+<P><STRONG><a name="[53]"></a>test_static_alc_free_violation</STRONG> (Thumb, 290 bytes, Stack size 80 bytes, half_fit_test.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = test_static_alc_free_violation &rArr; find_violation &rArr; qsort &rArr;  qsort (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;alloc_blk_in_arr
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_violation
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;is_violated
+<LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_max_block
+<LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;half_free
+<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;half_alloc
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;half_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[54]"></a>get_random_block_size</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, half_fit_test.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = get_random_block_size &rArr; log_2 &rArr; __2printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rand
+<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_2
+</UL>
+<BR>[Called By]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_rndm_alc_free
+</UL>
+
+<P><STRONG><a name="[56]"></a>test_rndm_alc_free</STRONG> (Thumb, 474 bytes, Stack size 1672 bytes, half_fit_test.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 1760<LI>Call Chain = test_rndm_alc_free &rArr; find_violation &rArr; qsort &rArr;  qsort (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rand
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_random_block_size
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_violation
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;is_violated
+<LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_max_block
+<LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;half_free
+<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;half_alloc
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;half_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[57]"></a>test_max_alc_1_byte</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, half_fit_test.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = test_max_alc_1_byte &rArr; find_max_block &rArr; half_free &rArr; merge_blocks &rArr; remove_from_bucket
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_max_block
+<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;half_alloc
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;half_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[6f]"></a>test_max_alc_rand_byte</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, half_fit_test.o(.text), UNUSED)
+
+<P><STRONG><a name="[2d]"></a>main</STRONG> (Thumb, 136 bytes, Stack size 0 bytes, half_fit_test.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 1760<LI>Call Chain = main &rArr; test_rndm_alc_free &rArr; find_violation &rArr; qsort &rArr;  qsort (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerInit
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_max_alc_1_byte
+<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_rndm_alc_free
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_static_alc_free_violation
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_static_alc_free
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_alc_free_max
+<LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_max_alc
+<LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemCoreClockUpdate
+<LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry8.o(.ARM.Collect$$$$00000009)
+</UL>
+<P><STRONG><a name="[5d]"></a>Free</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, uart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FreeSnd
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FreeRcv
+</UL>
+
+<P><STRONG><a name="[5a]"></a>Lock</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, uart.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LockSnd
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LockRcv
+</UL>
+
+<P><STRONG><a name="[59]"></a>LockRcv</STRONG> (Thumb, 28 bytes, Stack size 4 bytes, uart.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTRecieve
+</UL>
+
+<P><STRONG><a name="[5b]"></a>LockSnd</STRONG> (Thumb, 28 bytes, Stack size 4 bytes, uart.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTSend
+</UL>
+
+<P><STRONG><a name="[5c]"></a>FreeRcv</STRONG> (Thumb, 28 bytes, Stack size 4 bytes, uart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = FreeRcv
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTRecieve
+<LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTInit
+</UL>
+
+<P><STRONG><a name="[5e]"></a>FreeSnd</STRONG> (Thumb, 28 bytes, Stack size 4 bytes, uart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = FreeSnd
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTSend
+<LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTInit
+</UL>
+
+<P><STRONG><a name="[f]"></a>UART0_IRQHandler</STRONG> (Thumb, 86 bytes, Stack size 8 bytes, uart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = UART0_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[10]"></a>UART1_IRQHandler</STRONG> (Thumb, 88 bytes, Stack size 8 bytes, uart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = UART1_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
+</UL>
+<P><STRONG><a name="[5f]"></a>getFrequency</STRONG> (Thumb, 64 bytes, Stack size 0 bytes, uart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTInit
+</UL>
+
+<P><STRONG><a name="[34]"></a>UARTInit</STRONG> (Thumb, 176 bytes, Stack size 24 bytes, uart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = UARTInit &rArr; FreeSnd
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getFrequency
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FreeSnd
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FreeRcv
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_EnableIRQ
+</UL>
+<BR>[Called By]<UL><LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getkey
+<LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendchar
+</UL>
+
+<P><STRONG><a name="[61]"></a>UARTSend</STRONG> (Thumb, 112 bytes, Stack size 32 bytes, uart.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FreeSnd
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LockSnd
+</UL>
+
+<P><STRONG><a name="[35]"></a>UARTSendChar</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, uart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendchar
+</UL>
+
+<P><STRONG><a name="[62]"></a>UARTRecieve</STRONG> (Thumb, 134 bytes, Stack size 36 bytes, uart.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FreeRcv
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LockRcv
+</UL>
+
+<P><STRONG><a name="[37]"></a>UARTReceiveChar</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, uart.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getkey
+</UL>
+
+<P><STRONG><a name="[3c]"></a>__aeabi_llsl</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, llshl.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+
+<P><STRONG><a name="[70]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
+
+<P><STRONG><a name="[3b]"></a>__aeabi_llsr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llushr.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+
+<P><STRONG><a name="[71]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
+
+<P><STRONG><a name="[32]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
+</UL>
+<BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
+</UL>
+
+<P><STRONG><a name="[72]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[58]"></a>TimerInit</STRONG> (Thumb, 100 bytes, Stack size 12 bytes, half_fit_test.o(i.TimerInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = TimerInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[64]"></a>__0printf$1</STRONG> (Thumb, 22 bytes, Stack size 24 bytes, printf1.o(i.__0printf$1), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[73]"></a>__1printf$1</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf1.o(i.__0printf$1), UNUSED)
+
+<P><STRONG><a name="[4b]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf1.o(i.__0printf$1))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_max_alc_1_byte
+<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_rndm_alc_free
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_static_alc_free_violation
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_static_alc_free
+<LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_max_alc
+<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_2
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;is_violated
+</UL>
+
+<P><STRONG><a name="[74]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+
+<P><STRONG><a name="[75]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[60]"></a>NVIC_EnableIRQ</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, uart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTInit
+</UL>
+
+<P><STRONG><a name="[65]"></a>_printf_core</STRONG> (Thumb, 334 bytes, Stack size 88 bytes, printf1.o(i._printf_core), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0printf$1
+</UL>
+<P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>
